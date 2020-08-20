@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Quixlab - Bootstrap Admin Dashboard Template by Themefisher.com</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <!-- Pignose Calender -->
+    <link href="../plugins/pg-calendar/css/pignose.calendar.min.css" rel="stylesheet">
+    <!-- Chartist -->
+    <link rel="stylesheet" href="../plugins/chartist/css/chartist.min.css">
+    <link rel="stylesheet" href="../plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
+    <!-- Custom Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header bg-warning">
+            <div class="brand-logo">
+                <a href="index.html">
+                    <b class="logo-abbr"><img src="images/logo.png" alt=""> </b>
+                    <span class="logo-compact"></span>
+                    <span class="brand-title">
+                        <h5 style="color: white;">ALL HIVE SOLUTION</h5>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">
+            <div class="header-content clearfix">
+
+                <div class="nav-control">
+                    <div class="hamburger">
+                        <span class="toggle-icon"><i class="icon-menu"></i></span>
+                    </div>
+                </div>
+                <div class="header-left">
+                    <div class="input-group icons">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-transparent border-0 pr-2 pr-sm-3" id="basic-addon1"><i
+                                    class="mdi mdi-magnify"></i></span>
+                        </div>
+                        <input type="search" class="form-control" placeholder="Search Dashboard"
+                            aria-label="Search Dashboard">
+                        <div class="drop-down animated flipInX d-md-none">
+                            <form action="#">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <ul class="clearfix">
+                        <li class="icons dropdown"><a href="javascript:void(0)" data-toggle="dropdown">
+                                <i class="mdi mdi-email-outline"></i>
+                                <span class="badge badge-pill gradient-1">3</span>
+                            </a>
+                            <div class="drop-down animated fadeIn dropdown-menu">
+                                <div class="dropdown-content-heading d-flex justify-content-between">
+                                    <span class="">3 New Messages</span>
+                                    <a href="javascript:void()" class="d-inline-block">
+                                        <span class="badge badge-pill gradient-1">3</span>
+                                    </a>
+                                </div>
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li class="notification-unread">
+                                            <a href="javascript:void()">
+                                                <img class="float-left mr-3 avatar-img" src="images/avatar/1.jpg"
+                                                    alt="">
+                                                <div class="notification-content">
+                                                    <div class="notification-heading">Saiful Islam</div>
+                                                    <div class="notification-timestamp">08 Hours ago</div>
+                                                    <div class="notification-text">Hi Teddy, Just wanted to let you ...
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="notification-unread">
+                                            <a href="javascript:void()">
+                                                <img class="float-left mr-3 avatar-img" src="images/avatar/2.jpg"
+                                                    alt="">
+                                                <div class="notification-content">
+                                                    <div class="notification-heading">Adam Smith</div>
+                                                    <div class="notification-timestamp">08 Hours ago</div>
+                                                    <div class="notification-text">Can you do me a favour?</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void()">
+                                                <img class="float-left mr-3 avatar-img" src="images/avatar/3.jpg"
+                                                    alt="">
+                                                <div class="notification-content">
+                                                    <div class="notification-heading">Barak Obama</div>
+                                                    <div class="notification-timestamp">08 Hours ago</div>
+                                                    <div class="notification-text">Hi Teddy, Just wanted to let you ...
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void()">
+                                                <img class="float-left mr-3 avatar-img" src="images/avatar/4.jpg"
+                                                    alt="">
+                                                <div class="notification-content">
+                                                    <div class="notification-heading">Hilari Clinton</div>
+                                                    <div class="notification-timestamp">08 Hours ago</div>
+                                                    <div class="notification-text">Hello</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="icons dropdown"><a href="javascript:void(0)" data-toggle="dropdown">
+                                <i class="mdi mdi-bell-outline"></i>
+                                <span class="badge badge-pill gradient-2">3</span>
+                            </a>
+                            <div class="drop-down animated fadeIn dropdown-menu dropdown-notfication">
+                                <div class="dropdown-content-heading d-flex justify-content-between">
+                                    <span class="">2 New Notifications</span>
+                                    <a href="javascript:void()" class="d-inline-block">
+                                        <span class="badge badge-pill gradient-2">5</span>
+                                    </a>
+                                </div>
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void()">
+                                                <span class="mr-3 avatar-icon bg-success-lighten-2"><i
+                                                        class="icon-present"></i></span>
+                                                <div class="notification-content">
+                                                    <h6 class="notification-heading">Events near you</h6>
+                                                    <span class="notification-text">Within next 5 days</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void()">
+                                                <span class="mr-3 avatar-icon bg-danger-lighten-2"><i
+                                                        class="icon-present"></i></span>
+                                                <div class="notification-content">
+                                                    <h6 class="notification-heading">Event Started</h6>
+                                                    <span class="notification-text">One hour ago</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void()">
+                                                <span class="mr-3 avatar-icon bg-success-lighten-2"><i
+                                                        class="icon-present"></i></span>
+                                                <div class="notification-content">
+                                                    <h6 class="notification-heading">Event Ended Successfully</h6>
+                                                    <span class="notification-text">One hour ago</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void()">
+                                                <span class="mr-3 avatar-icon bg-danger-lighten-2"><i
+                                                        class="icon-present"></i></span>
+                                                <div class="notification-content">
+                                                    <h6 class="notification-heading">Events to Join</h6>
+                                                    <span class="notification-text">After two days</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="icons dropdown d-none d-md-flex">
+                            <a href="javascript:void(0)" class="log-user" data-toggle="dropdown">
+                                <span>English</span> <i class="fa fa-angle-down f-s-14" aria-hidden="true"></i>
+                            </a>
+                            <div class="drop-down dropdown-language animated fadeIn  dropdown-menu">
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li><a href="javascript:void()">English</a></li>
+                                        <li><a href="javascript:void()">Dutch</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="icons dropdown">
+                            <div class="user-img c-pointer position-relative" data-toggle="dropdown">
+                                <span class="activity active"></span>
+                                <img src="images/user/1.png" height="40" width="40" alt="">
+                            </div>
+                            <div class="drop-down dropdown-profile animated fadeIn dropdown-menu">
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li>
+                                            <a href="app-profile.html"><i class="icon-user"></i>
+                                                <span>Profile</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void()">
+                                                <i class="icon-envelope-open"></i> <span>Inbox</span>
+                                                <div class="badge gradient-3 badge-pill gradient-1">3</div>
+                                            </a>
+                                        </li>
+
+                                        <hr class="my-2">
+                                        <li>
+                                            <a href="page-lock.html"><i class="icon-lock"></i> <span>Lock
+                                                    Screen</span></a>
+                                        </li>
+                                        <li><a href="page-login.html"><i class="icon-key"></i> <span>Logout</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="nk-sidebar">
+            <div class="nk-nav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li>
+                        <a class="active" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-speedometer menu-icon"></i><span class="nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-speedometer menu-icon"></i><span class="nav-text">Registration
+                                Associate</span>
+                        </a>
+                    </li>
+
+
+                    <li class="mega-menu mega-menu-sm">
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-globe-alt menu-icon"></i><span class="nav-text"> Associate Profile</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li>
+                                <a href="app-profile.html">
+
+                                    My Profile
+                                </a>
+                            </li>
+                            <li>
+                                <a href="manage-profile.html">
+                                    Manage Profile
+                                </a>
+                            </li>
+                            <li>
+                                <a href="manage-profile.html">
+                                    Payment Option
+                                </a>
+                            </li>
+                            <li>
+                                <a href="app-password.html">
+
+                                    Change Password
+                                </a>
+                            </li>
+                            <li>
+                                <a href="app-password.html">
+
+                                    Change Transcation Password
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+
+                                    Upload KYC
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <a class="" href="ahs-membership.html" aria-expanded="false">
+                            <i class="icon-speedometer menu-icon"></i><span class="nav-text">AHS MEMBERSHIP CARD</span>
+                        </a>
+                    </li>
+        
+                  
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-screen-tablet menu-icon"></i><span class="nav-text">Membership Card ADD-ON Subscription </span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="../currency.html">CURRENCY</a></li>
+                           <li><a href="../crypto-con.html"> CRYPTO CONVERSION </a></li>
+                           <li><a href="../crypto=curr.html"> CRYPTO CURRENCY COIN  </a></li>
+                           <li><a href="../multiple.purpose.html"> MULTIPLE PURPOSES </a></li>
+                           <li><a href="../ahs-crypto-marketplace.html"> AHS CRYPTO MARKETPLACE MEMBERSHIP </a></li>
+                           <li><a href="../ahs-support-code.html"> AHS SUPPORT CODE  </a></li>
+                           <li><a href="../ahs-marketplace-code.html"> AHS MARKETPLACE CODE </a></li>
+                           <li><a href="../ahs-coin.html"> AHS COIN </a></li>
+                           <li><a href="../crypto-currency-coin.html"> CRYPTO CURRENCY COIN CASHBACK </a></li>
+                           <li><a href="../ahs-escrow.html"> AHS ESCROW ACCOUNT  </a></li>
+                           <li><a href="../worldwide-community.html"> WORLDWIDE COMMUNITY NETWORK SUPPORT  </a></li>
+                           <li><a href="../ahs-support-code-growth.html"> AHS SUPPORT CODE COMMUNITY GROWTH ASSOCIATE </a></li>
+                           <li><a href="../cashback-earning.html"> CASHBACK EARNING  </a></li>
+                           <li><a href="../point-earn.html"> POINT EARN </a></li>
+                           <li><a href="../point-account.html"> POINT ACCOUNT  </a></li>
+                           <li><a href="../offer.html"> OFFER </a></li>
+                           <li><a href="../promotion-code.html"> PROMOTION CODES </a></li>
+                           <li><a href="../franchise.html"> FRANCHISE </a></li>
+                           <li><a href="../affiliate.html"> AFFILIATE EARNINGS </a></li>
+                           <li><a href="../surprise.html"> SURPRISE / GIFTS </a></li>
+                           <li><a href="../ahs-marketplace-product.html"> AHS MARKETPLACE PRODUCTS AND SERVICES </a></li>
+                           <li><a href="../donation.html"> DONATION </a></li>
+                           <li><a href="../system-support.html"> SYSTEM SUPPORT AND SERVICES </a></li>
+                           <li><a href="../training.html"> TRAINING/SEMINAR  </a></li>
+                           <li><a href="../single-leg.html"> SINGLE LEG TEAM WORK </a></li>
+                           <li><a href="../affiliate-promotion.html"> AFFILIATE PROMOTION AND BRANDING   </a></li>
+                           <li><a href="../my-destination.html"> MY DESIGNATION </a></li>
+                           <li><a href="../official.html"> OFFICIAL TEAM </a></li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-screen-tablet menu-icon"></i><span class="nav-text">ADD-ON Subscription Codes</span>
+                        </a>
+                        <ul aria-expanded="false">
+                           <li><a href="#"> CRYPTO CONVERSION </a></li>
+                           <li><a href="#"> CRYPTO CURRENCY COIN  </a></li>
+                           <li><a href="#"> MULTIPLE PURPOSES </a></li>
+                           <li><a href="#"> AHS CRYPTO MARKETPLACE MEMBERSHIP </a></li>
+                           <li><a href="#"> AHS SUPPORT CODE  </a></li>
+                           <li><a href="#"> AHS MARKETPLACE CODE </a></li>
+                           <li><a href="#"> AHS COIN </a></li>
+                           <li><a href="#"> CRYPTO CURRENCY COIN CASHBACK </a></li>
+                           <li><a href="#"> AHS ESCROW ACCOUNT  </a></li>
+                           <li><a href="#"> WORLDWIDE COMMUNITY NETWORK SUPPORT  </a></li>
+                           <li><a href="#"> AHS SUPPORT CODE COMMUNITY GROWTH ASSOCIATE </a></li>
+                           <li><a href="#"> CASHBACK EARNING  </a></li>
+                           <li><a href="#"> POINT EARN </a></li>
+                           <li><a href="#"> POINT ACCOUNT  </a></li>
+                           <li><a href="#"> OFFER </a></li>
+                           <li><a href="#"> PROMOTION CODES </a></li>
+                           <li><a href="#"> FRANCHISE </a></li>
+                           <li><a href="#"> AFFILIATE EARNINGS </a></li>
+                           <li><a href="#"> SURPRISE / GIFTS </a></li>
+                           <li><a href="#"> AHS MARKETPLACE PRODUCTS AND SERVICES </a></li>
+                           <li><a href="#"> DONATION </a></li>
+                           <li><a href="#"> SYSTEM SUPPORT AND SERVICES </a></li>
+                           <li><a href="#"> TRAINING/SEMINAR  </a></li>
+                           <li><a href="#"> SINGLE LEG TEAM WORK </a></li>
+                           <li><a href="#"> AFFILIATE PROMOTION AND BRANDING   </a></li>
+                           <li><a href="#"> MY DESIGNATION </a></li>
+                           <li><a href="#"> OFFICIAL TEAM </a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-screen-tablet menu-icon"></i><span class="nav-text">Wallet & Report   </span>
+                        </a>
+                        <ul>
+                            <li><a href="currency.html">CURRENCY   </a></li>
+                            <li><a href="crypto-currency-coin.html">CRYPTO CURRENCY COIN.   </a></li>
+                            <li><a href="ahs-crypto-conversion.html">AHS CRYPTO CONVERSION   </a></li>
+                            <li><a href="multiple-purpose.html">MULTIPLE PURPOSES   </a></li>
+                            <li><a href="crypto-marketplace.html">CRYPTO MARKETPLACE </a></li>
+                            <li><a href="ahs-support-code.html">AHS SUPPORT CODE   </a></li>
+                            <li><a href="ahs-marketplace-code.html">AHS MARKETPLACE CODE   </a></li>
+                            <li><a href="ahs-coin.html">AHS COIN </a></li>
+                            <li><a href="crypto-currency-coin-cashback.html">CRYPTO CURRENCY COIN CASHBACK </a></li>
+                            <li><a href="escrow-account.html">ESCROW ACCOUNT </a></li>
+                            <li><a href="world-wide-community.html">Worldwide community Network   </a></li>
+                            <li><a href="ahs-support-code-growth.html">AHS SUPPORT CODE, COMMUNITY GROWTH ASSOCIATE   </a></li>
+                            <li><a href="cashback.html">CASHBACK    </a></li>
+                            <li><a href="point-earn.html">POINT EARN </a></li>
+                            <li><a href="point-account.html">POINT ACCOUNT  </a></li>
+                            <li><a href="offer.html">OFFER   </a></li>
+                            <li><a href="promotion-code.html">PROMOTION CODES  </a></li>
+                            <li><a href="franchise.html">FRANCHISE   </a></li>
+                            <li><a href="affiliate-earning.html">AFFILIATE EARNING   </a></li>
+                            <li><a href="surprise.html">SURPRISE / GIFTS  </a></li>
+                            <li><a href="ahs-marketplace-product.html">AHS MARKETPLACE PRODUCTS AND SERVICES </a></li>
+                            <li><a href="donation.html">DONATION  </a></li>
+                            <li><a href="system-support.html">SYSTEM SUPPORT AND SERVICES </a></li>
+                            <li><a href="training.html">TRAINING/SEMINAR   </a></li>
+                            <li><a href="direct-referal.html">DIRECT REFRAAL ASSOCIATE   </a></li>
+                            <li><a href="my-team-earning.html">MY AND TEAM EARINING   </a></li>
+                            <li><a href="my-team-work.html">MY TEAM WORK   </a></li>
+                            <li><a href="single-leg-team-work.html">SINGLE LEG TEAM WORK   </a></li>
+                            <li><a href="level-team-work.html">LEVEL TEAM WORK </a></li>
+                            <li><a href="affiliate-promotion.html">AFFILIATE PROMOTION AND BRANDING    </a></li>
+                            <li><a href="my-team-management.html">MY TEAM MANAGEMENT  </a></li>
+                            <li><a href="my-destination.html">MY DESIGNATION   </a></li>
+                            <li><a href="my-destination-reward.html">MY DESIGNATION REWARD    </a></li>
+                            <li><a href="official-team.html">OFFICIAL TEAM   </a></li>
+                            <li><a href="official-earning.html">OFFICIAL EARNING    </a></li>
+                            <li><a href="my-official-team-management.html">MY OFFICIAL TEAM MANAGEMENT   </a></li>
+                            <li><a href="official-team-work.html">OFFICIAL TEAM WORK  </a></li>
+                            <li><a href="my-official-rewards.html">MY OFFICIAL REWARDS   </a></li>
+                           
+                        </ul>
+                    </li>
+
+                    <li>
+
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-screen-tablet menu-icon"></i><span class="nav-text">Support Commitment  </span>
+                        </a>
+                        <ul>
+                            <li><a href="#">Give Support Request by</a></li>
+                            <li><a href="#">Give Support Request</a></li>
+                            <li><a href="#">Give Support Request Status</a></li>
+                            <li><a href="#">Give Support link reference</a></li>
+                            <li><a href="#">Get Support by</a></li>
+                            <li><a href="#">GET SUPPORT link reference</a></li>
+                            <li><a href="#">Given Support</a></li>
+                            <li><a href="#">Received Support</a></li>
+                        </ul>
+                    </li>
+
+
+                  
+                   
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-screen-tablet menu-icon"></i><span class="nav-text">
+                            My Team & Support
+                        </span>
+                    </a>
+                    </li>
+
+
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-screen-tablet menu-icon"></i><span class="nav-text">
+                            Affiliate Earning
+                        </span>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-screen-tablet menu-icon"></i><span class="nav-text">
+                            Earning & Report
+                        </span>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-screen-tablet menu-icon"></i><span class="nav-text">
+                            Withdrawl & Report
+                        </span>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-screen-tablet menu-icon"></i><span class="nav-text">
+                            Promotion/Offer Code
+                        </span>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-screen-tablet menu-icon"></i><span class="nav-text">
+                            News Update
+                        </span>
+                        </a>
+                    </li>
+
+                    
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-screen-tablet menu-icon"></i><span class="nav-text">
+                            Event & Ticket
+                        </span>
+                        </a>
+                    </li>
+
+                    
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-screen-tablet menu-icon"></i><span class="nav-text">
+                            FAQ
+                        </span>
+                        </a>
+                    </li>
+
+                    
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-screen-tablet menu-icon"></i><span class="nav-text">
+                            Promotion Resource
+                        </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+
+            <div class="container-fluid mt-3">
+                <h1 class="h3 mb-4 text-gray-800">CRYPTO CURRENCY COIN</h1>
+                <div class="row">
+                    <div class="col-sm-12 bg-white shadow py-5 pl-2 pr-2 step-2">
+        
+                      <!-- <form> -->
+
+                        <label>Currency Wallet Current Balance</label>
+                        <input type="text" class="form-control" value="500" readonly><br>
+
+                        <label>Currency CONVERSION</label>
+                        <select name="account_type" class="form-control">
+                            <option value="payment-type">-Select Currency Type-</option>
+                            <option value="payment-type">BITCOIN</option>
+                            <option value="payment-type">ETHERUM</option>
+                            <option value="payment-type">ALTCOIN</option>
+                            <option value="payment-type">TRON</option>
+                        </select><br>
+                        <label>Account/Wallet Balance</label>
+                        <input type="text" class="form-control" value="500" readonly><br>
+
+                        <label>Enter Currency Amount</label>
+                        <input type="text" class="form-control" placeholder="Enter Amount"><br>
+
+
+                        <label>TRANFER FUNDS TO OTHER TYPES OF WALLETS ON SELF USER ID ONLY</label>
+                        <select name="account_type" class="form-control">
+                            <option value="select">-Select Wallet Name-</option>
+                           <option value="data"> CRYPTO CURRENCY COIN </option>
+                           <option value="data"> CRYPTO CONVERSION </option>
+                           <option value="data"> MULTIPLE PURPOSES </option>
+                           <option value="data"> CRYPTO MARKETPLACE </option>
+                           <option value="data"> AHS SUPPORT CODE </option>
+                           <option value="data"> AHS MARKETPLACE CODE </option>
+                           <option value="data"> AHS COIN </option>
+                           <option value="data"> CRYPTO CURRENCY COIN CASHBACK </option>
+                           <option value="data"> ESCROW ACCOUNT </option>
+                           <option value="data"> WORLDWIDE COMMUNITY NETWORK </option>
+                           <option value="data"> AHS SUPPORT CODE </option>
+                           <option value="data"> COMMUNITY GROWTH ASSOCIATE </option>
+                           <option value="data"> CASHBACK, POINT EARN </option>
+                           <option value="data"> POINT ACCOUNT </option>
+                           <option value="data"> OFFER </option>
+                           <option value="data"> PROMOTION CODES </option>
+                           <option value="data"> FRANCHISE </option>
+                           <option value="data"> AFFILIATE EARNING </option>
+                           <option value="data"> SURPRISE / GIFTS </option>
+                           <option value="data"> AHS MARKETPLACE PRODUCTS AND SERVICES </option>
+                           <option value="data"> DONATION </option>
+                           <option value="data"> SYSTEM SUPPORT AND SERVICES </option>
+                           <option value="data"> TRAINING/SEMINAR </option>
+                           <option value="data"> DIRECT REFRAAL ASSOCIATE </option>
+                           <option value="data"> MY AND TEAM EARINING </option>
+                           <option value="data"> MY TEAM WORK </option>
+                           <option value="data"> SINGLE LEG TEAM WORK </option>
+                           <option value="data"> LEVEL TEAM WORK </option>
+                           <option value="data"> AFFILIATE PROMOTION AND BRANDING </option>
+                           <option value="data"> MY TEAM WORK </option>
+                           <option value="data"> MY TEAM MANAGEMENT </option>
+                           <option value="data"> MY DESIGNATION </option>
+                           <option value="data"> MY DESIGNATION REWARD </option>
+                           <option value="data"> OFFICIAL TEAM </option>
+                           <option value="data"> OFFICIAL EARNING </option>
+                           <option value="data">  MY OFFICIAL TEAM MANAGEMENT </option>
+                           <option value="data"> OFFICIAL TEAM WORK </option>
+                           <option value="data"> MY OFFICIAL REWARDS </option>
+                        </select><br>
+
+
+                        <label>Transfer Amount</label>
+                        <input type="text" class="form-control" placeholder="Enter Amount"><br>
+
+                        <label>Remarks</label>
+                        <input type="text" class="form-control" placeholder="Enter Remark"><br>
+
+                        <button type="submit" class="btn btn-warning" id="hide" style="width: 100%;">SUBMIT</button>
+                      <!-- </form> -->
+                    </div>
+
+
+                
+                    <div class="col-sm-12 bg-white shadow py-5 pl-2 pr-2 step-1">
+                        <label>Enter Transcation Password</label>
+                        <input type="text" class="form-control" placeholder="Enter Transcation Password"><br>
+
+                        <button type="submit" class="btn btn-warning" id="pass" style="width: 100%;">SUBMIT</button>
+                    
+                 </div>
+
+
+                 <div class="col-sm-12 bg-white shadow py-5 pl-2 pr-2 step-3">
+                    <label>Enter Master Transcation Password</label>
+                    <input type="text" class="form-control" placeholder="Enter Master Transcation Password"><br>
+
+                    <button type="submit" class="btn btn-warning" id="pass" style="width: 100%;">SUBMIT</button>
+                
+             </div>
+
+
+              
+                  </div>
+            <!-- #/ container -->
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <!--**********************************
+            Footer end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+
+    <script>
+
+        $(".step-2").hide();
+        $(".step-3").hide();
+        $("#pass").click(function(){
+        $(".step-2").show();
+        $(".step-1").hide();
+        });
+
+
+        $("#hide").click(function(){
+        $(".step-2").hide();
+        $(".step-1").hide();
+        $(".step-3").show();
+
+        });
+
+        
+    </script>
+    <script src="../plugins/common/common.min.js"></script>
+    <script src="../js/custom.min.js"></script>
+    <script src="../js/settings.js"></script>
+    <script src="../js/gleek.js"></script>
+    <script src="../js/styleSwitcher.js"></script>
+
+    <!-- Chartjs -->
+    <script src="../plugins/chart.js/Chart.bundle.min.js"></script>
+    <!-- Circle progress -->
+    <script src="../plugins/circle-progress/circle-progress.min.js"></script>
+    <!-- Datamap -->
+    <script src="../plugins/d3v3/index.js"></script>
+    <script src="../plugins/topojson/topojson.min.js"></script>
+    <script src="../plugins/datamaps/datamaps.world.min.js"></script>
+    <!-- Morrisjs -->
+    <script src="../plugins/raphael/raphael.min.js"></script>
+    <script src="../plugins/morris/morris.min.js"></script>
+    <!-- Pignose Calender -->
+    <script src="../plugins/moment/moment.min.js"></script>
+    <script src="../plugins/pg-calendar/js/pignose.calendar.min.js"></script>
+    <!-- ChartistJS -->
+    <script src="../plugins/chartist/js/chartist.min.js"></script>
+    <script src="../plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+
+
+
+    <script src="../js/dashboard/dashboard-1.js"></script>
+
+</body>
+
+</html>

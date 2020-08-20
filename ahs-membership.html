@@ -23,6 +23,7 @@
     * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
     -->
     <link href="./main.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -445,22 +446,132 @@
                     <div class="app-page-title">
                         <div class="page-title-wrapper">
                             <div class="page-title-heading">
-                                <div>Suscription Packages / Currency
+                                <div>AHS MEMBERSHIP CARD AND REPORT
 
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <!-- addcontent -->
-                        
-
-                        <!-- end content -->
-                    </div>
+                        <div class="col-12 step-1">
+                            <div class="card bg-white">
+                                <div class="card-body">
+                                    <label for="dropdown">Select the Purpose of AHS Membership Card</label>
+                                    <select class="form-control">
+                                        <option value="-Select the Purpose of AHS Membership Card-">-Select the Purpose of AHS Membership Card-</option>
+                                        <option value="AHS">E-commerce</option>
+                                        <option value="AHS">Grocery</option>
+                                        <option value="AHS">Energy</option>
+                                        <option value="AHS">Entertainment</option>
+                                        <option value="AHS">Health</option>
+                                        <option value="AHS">E-Learning</option>
+                                        <option value="AHS">Events Planning</option>
+                                        <option value="AHS">Matrimonial</option>
+                                        <option value="AHS">Wedding Planning</option>
+                                        <option value="AHS">Jobs</option>
+                                        <option value="AHS">News</option>
+                                        <option value="AHS">Affiliate</option>
+                                        <option value="AHS">Associate</option>
+                                        <option value="AHS">Business</option>
+                                        <option value="AHS">Consultancy</option>
+                                        <option value="AHS">CSR</option>
+                                        <option value="AHS">Franchise</option>
+                                        <option value="AHS">Spiritual</option>
+                                        <option value="AHS">Donation</option>
+                                        <option value="AHS">Loan</option>
+                                        <option value="AHS">Travel</option>
+                                        <option value="AHS">Real Estate</option>
+                                        <option value="AHS">Legal Support</option>
+                                        <option value="AHS">Services</option>
+                                        <option value="AHS">VEHICLES</option>
+                                        <option value="AHS">PROMOTION CODE</option>
+                                        <option value="AHS">DATING</option>
+                                        <option value="AHS">MULTIPLE PURPOSES</option>
+                                        <option value="AHS">CRYPTO MARKETPLACE MEMBERSHIP</option>
+                                        <option value="AHS">AHS SUPPORT CODE</option>
+                                        <option value="AHS">AHS MARKETPLACE CODE</option>
+                                        <option value="AHS">AHS COIN</option>
+                                        <option value="AHS">CRYPTO CURRENCY COIN CASHBACK</option>
+                                        <option value="AHS">AHS ESCROW ACCOUNT</option>
+                                        <option value="AHS">WORLDWIDE COMMUNITY NETWORK SUPPORT</option>
+                                        <option value="AHS">AHS SUPPORT CODE COMMUNITY GROWTH ASSOCIATE</option>
+                                        <option value="AHS">CASHBACK EARNING</option>
+                                        <option value="AHS">POINT EARN</option>
+                                        <option value="AHS">POINT ACCOUNT</option>
+                                        <option value="AHS">OFFER</option>
+                                        <option value="AHS">PROMOTION CODES</option>
+                                        <option value="AHS">FRANCHISE</option>
+                                        <option value="AHS">AFFILIATE EARNINGS</option>
+                                        <option value="AHS">SURPRISE / GIFTS</option>
+                                        <option value="AHS">AHS MARKETPLACE PRODUCTS AND SERVICES</option>
+                                        <option value="AHS">DONATION</option>
+                                        <option value="AHS">SYSTEM SUPPORT AND SERVICES</option>
+                                        <option value="AHS">TRAINING/SEMINAR</option>
+                                        <option value="AHS">SINGLE LEG TEAM WORK</option>
+                                        <option value="AHS">AFFILIATE PROMOTION AND BRANDING</option>
+                                        <option value="AHS">MY DESIGNATION</option>
+                                        <option value="AHS">OFFICIAL TEAM.</option>
+                                    </select><br>
+        
+                                    <label for="select">Select the Type of AHS Membership Card</label>
+                                    <select class="form-control">
+                                        <option value="selct">-Select the Type of AHS Membership Card-</option>
+                                        <option value="AHS">BEGINNERS MEMBERSHIP CARD</option>
+                                        <option value="AHS">START – UP MEMBERSHIP CARD</option>
+                                        <option value="AHS">SUPPORT MEMBERSHIP CARD</option>
+                                        <option value="AHS">BUSINESS MEMBERSHIP CARD</option>
+                                        <option value="AHS">AFFILIATE MEMBERSHIP CARD</option>
+                                        <option value="AHS">MULTIPLE PURPOSES MEMBERSHIP CARD</option>
+                                    </select><br>
+                                    <button class="btn btn-warning btn-block btn-step">NEXT</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+        
+        
+                        <div class="col-12 step-2">
+                            <div class="card bg-white">
+                                <div class="card-body">
+                                    <label for="dropdown">Select the AHS Membership Card Tenure</label>
+                                    <select class="form-control">
+                                        <option value="-Select the AHS Membership Card Tenure-">-Select the AHS Membership Card Tenure-</option>
+                                        <option value="AHS">NOT APPLICABLE</option>
+                                        <option value="AHS">1 Months</option>
+                                        <option value="AHS">3 Months</option>
+                                        <option value="AHS">6 Months</option>
+                                        <option value="AHS">1 Year</option>
+                                    </select><br>
+        
+                                    <h3>WE WILL DISPLAY THE VIRTUAL MEMBERSHIP CARD AND BENIFITS</h3><br>
+        
+                                    <label>Remarks</label>
+                                    <input type="text" class="form-control" placeholder="Remark"><br>
+                                    <button class="btn btn-warning btn-block">SUBMIT</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    
+    <script>
+        $(".step-2").hide();
+        $(".editbtn").hide();
+       $(".btn-step").click(function(){
+           $(".step-2").show();
+           $(".editbtn").show();
+           $(".step-1").hide();
+       });
+
+</script>
+
+
     <script type="text/javascript" src="./assets/scripts/main.js"></script>
 </body>
 

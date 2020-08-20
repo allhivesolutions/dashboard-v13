@@ -9349,7 +9349,7 @@ button,
   background: url(assets/images/logo-inverse.png);
 }
 .app-sidebar {
-  width: 280px;
+  width: 300px;
   display: flex;
   z-index: 11;
   overflow: hidden;
